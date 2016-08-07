@@ -5,11 +5,41 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+  <!-- MATH3 -->
 	<dependency>
     	<groupId>org.apache.commons</groupId>
     	<artifactId>commons-math3</artifactId>
     	<version>3.2</version>
+	</dependency>
+	<!-- Spring MVC -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>4.3.2.RELEASE</version>
+	</dependency>
+	<!-- Spring JDBC -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>4.3.2.RELEASE</version>
+	</dependency>
+	<!-- My SQL Connector -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>6.0.3</version>
+	</dependency>
+	<!-- Commons DBCP -->
+	<dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.4</version>
+	</dependency>
+	<!-- Commons pool -->
+	<dependency>
+	    <groupId>commons-pool</groupId>
+	    <artifactId>commons-pool</artifactId>
+	    <version>1.6</version>
 	</dependency>
   </dependencies>
   <build>

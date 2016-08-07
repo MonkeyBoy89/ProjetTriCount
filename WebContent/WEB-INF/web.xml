@@ -10,13 +10,26 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <description>Cette servlet sert de test JEE</description>
     <display-name>Menu</display-name>
-    <servlet-name>Menu</servlet-name>
-    <servlet-class>servlets.Menu</servlet-class>
+    <servlet-name>mccproject</servlet-name>
+    <servlet-class>org.springframwork.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Menu</servlet-name>
-    <url-pattern>/Menu</url-pattern>
+    <servlet-name>mccproject</servlet-name>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
+  <listener>
+  	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>
+  		/WEB-INF/mccproject-data.xml
+		/WEB-INF/mccproject-service.xml
+		/WEB-INF/mccproject-servlet.xml
+	</param-value>
+  </context-param>
+  
+  
 </web-app>
